@@ -1,0 +1,1402 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "3.3.0",
+  "build" : 52636,
+  "layers" : [
+    "CIMPATH=map/military_operations.json"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMFeatureLayer",
+      "name" : "Military Operations",
+      "uRI" : "CIMPATH=map/military_operations.json",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "description" : "Events",
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "elevationSurfaceLayerURI" : "CIMPATH=Map/057c1a4c9c364532ad984e0a3aadd510.json"
+      },
+      "expanded" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "blendingMode" : "Alpha",
+      "allowDrapingOnIntegratedMesh" : true,
+      "autoGenerateFeatureTemplates" : true,
+      "featureElevationExpression" : "0",
+      "featureTable" : {
+        "type" : "CIMFeatureTable",
+        "definitionExpression" : "IncidentType = 'Military operations (battle, shelling)' OR IncidentType = 'Movement of military, paramilitary, or other troops and equipment'",
+        "definitionExpressionName" : "Query 1",
+        "definitionFilterChoices" : [
+          {
+            "type" : "CIMDefinitionFilter",
+            "name" : "Query 1",
+            "definitionExpression" : "IncidentType = 'Military operations (battle, shelling)' OR IncidentType = 'Movement of military, paramilitary, or other troops and equipment'"
+          }
+        ],
+        "displayField" : "Incident_Narrative",
+        "editable" : true,
+        "fieldDescriptions" : [
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "OBJECTID",
+            "fieldName" : "OBJECTID",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 0
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Shape",
+            "fieldName" : "Shape",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Incident Narrative",
+            "fieldName" : "Incident_Narrative",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "IncidentType",
+            "fieldName" : "IncidentType",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Incident impact",
+            "fieldName" : "Incident_impact",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "(Presumed) perpetrator",
+            "fieldName" : "F_Presumed__perpetrator",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Number of Fatalities",
+            "fieldName" : "Number_of_Fatalities",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Countrywide/ multiple locations",
+            "fieldName" : "Countrywide__multiple_locations",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "State",
+            "fieldName" : "State",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Location",
+            "fieldName" : "Location",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Specifics about the location",
+            "fieldName" : "Specifics_about_the_location",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Feature",
+            "fieldName" : "Feature",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Latitude",
+            "fieldName" : "Latitude",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Longitude",
+            "fieldName" : "Longitude",
+            "numberFormat" : {
+              "type" : "CIMNumericFormat",
+              "alignmentOption" : "esriAlignRight",
+              "alignmentWidth" : 0,
+              "roundingOption" : "esriRoundNumberOfDecimals",
+              "roundingValue" : 6
+            },
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Maxar Imagery Status (since March)",
+            "fieldName" : "Maxar_Imagery_Status__since_March_",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "ReadyToMap",
+            "fieldName" : "ReadyToMap",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Satellite imagery request",
+            "fieldName" : "Satellite_imagery_request",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Source 1",
+            "fieldName" : "Source_1",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "URL Link to source 1",
+            "fieldName" : "URL_Link_to_source_1",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Source 2",
+            "fieldName" : "Source_2",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "URL Link to source 2",
+            "fieldName" : "URL_Link_to_source_2",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "Source 3",
+            "fieldName" : "Source_3",
+            "visible" : true,
+            "searchMode" : "Exact"
+          },
+          {
+            "type" : "CIMFieldDescription",
+            "alias" : "URL Link to Source 3",
+            "fieldName" : "URL_Link_to_Source_3",
+            "visible" : true,
+            "searchMode" : "Exact"
+          }
+        ],
+        "dataConnection" : {
+          "type" : "CIMStandardDataConnection",
+          "workspaceConnectionString" : "DATABASE=..\\..\\Documents\\ArcGIS\\Projects\\multiLayerTest\\multiLayerTest.gdb",
+          "workspaceFactory" : "FileGDB",
+          "dataset" : "Events",
+          "datasetType" : "esriDTFeatureClass"
+        },
+        "studyAreaSpatialRel" : "esriSpatialRelUndefined",
+        "searchOrder" : "esriSearchOrderSpatial"
+      },
+      "htmlPopupEnabled" : true,
+      "selectable" : true,
+      "featureCacheType" : "Session",
+      "displayFiltersType" : "ByScale",
+      "featureBlendingMode" : "Alpha",
+      "layerEffectsMode" : "Layer",
+      "labelClasses" : [
+        {
+          "type" : "CIMLabelClass",
+          "expressionTitle" : "Custom",
+          "expression" : "$feature.name",
+          "expressionEngine" : "Arcade",
+          "featuresToLabel" : "AllVisibleFeatures",
+          "maplexLabelPlacementProperties" : {
+            "type" : "CIMMaplexLabelPlacementProperties",
+            "featureType" : "Point",
+            "avoidPolygonHoles" : true,
+            "canOverrunFeature" : true,
+            "canPlaceLabelOutsidePolygon" : true,
+            "canRemoveOverlappingLabel" : true,
+            "canStackLabel" : true,
+            "centerLabelAnchorType" : "Symbol",
+            "connectionType" : "Unambiguous",
+            "constrainOffset" : "NoConstraint",
+            "contourAlignmentType" : "Page",
+            "contourLadderType" : "Straight",
+            "contourMaximumAngle" : 90,
+            "enableConnection" : true,
+            "enablePointPlacementPriorities" : true,
+            "featureWeight" : 0,
+            "fontHeightReductionLimit" : 4,
+            "fontHeightReductionStep" : 0.5,
+            "fontWidthReductionLimit" : 90,
+            "fontWidthReductionStep" : 5,
+            "graticuleAlignmentType" : "Straight",
+            "keyNumberGroupName" : "Default",
+            "labelBuffer" : 15,
+            "labelLargestPolygon" : true,
+            "labelPriority" : -1,
+            "labelStackingProperties" : {
+              "type" : "CIMMaplexLabelStackingProperties",
+              "stackAlignment" : "ChooseBest",
+              "maximumNumberOfLines" : 3,
+              "minimumNumberOfCharsPerLine" : 3,
+              "maximumNumberOfCharsPerLine" : 24,
+              "separators" : [
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : " ",
+                  "splitAfter" : true
+                },
+                {
+                  "type" : "CIMMaplexStackingSeparator",
+                  "separator" : ",",
+                  "visible" : true,
+                  "splitAfter" : true
+                }
+              ],
+              "trimStackingSeparators" : true
+            },
+            "lineFeatureType" : "General",
+            "linePlacementMethod" : "OffsetCurvedFromLine",
+            "maximumLabelOverrun" : 36,
+            "maximumLabelOverrunUnit" : "Point",
+            "minimumFeatureSizeUnit" : "Map",
+            "multiPartOption" : "OneLabelPerPart",
+            "offsetAlongLineProperties" : {
+              "type" : "CIMMaplexOffsetAlongLineProperties",
+              "placementMethod" : "BestPositionAlongLine",
+              "labelAnchorPoint" : "CenterOfLabel",
+              "distanceUnit" : "Percentage",
+              "useLineDirection" : true
+            },
+            "pointExternalZonePriorities" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "polygonAnchorPointType" : "GeometricCenter",
+            "polygonBoundaryWeight" : 0,
+            "polygonExternalZones" : {
+              "type" : "CIMMaplexExternalZonePriorities",
+              "aboveLeft" : 4,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerRight" : 3,
+              "belowRight" : 5,
+              "belowCenter" : 7,
+              "belowLeft" : 8,
+              "centerLeft" : 6
+            },
+            "polygonFeatureType" : "General",
+            "polygonInternalZones" : {
+              "type" : "CIMMaplexInternalZonePriorities",
+              "center" : 1
+            },
+            "polygonPlacementMethod" : "CurvedInPolygon",
+            "primaryOffset" : 1,
+            "primaryOffsetUnit" : "Point",
+            "removeAmbiguousLabels" : "All",
+            "removeExtraWhiteSpace" : true,
+            "repetitionIntervalUnit" : "Point",
+            "rotationProperties" : {
+              "type" : "CIMMaplexRotationProperties",
+              "rotationType" : "Arithmetic",
+              "alignmentType" : "Straight"
+            },
+            "secondaryOffset" : 100,
+            "secondaryOffsetUnit" : "Percentage",
+            "strategyPriorities" : {
+              "type" : "CIMMaplexStrategyPriorities",
+              "stacking" : 1,
+              "overrun" : 2,
+              "fontCompression" : 3,
+              "fontReduction" : 4,
+              "abbreviation" : 5
+            },
+            "thinningDistanceUnit" : "Point",
+            "truncationMarkerCharacter" : ".",
+            "truncationMinimumLength" : 1,
+            "truncationPreferredCharacters" : "aeiou",
+            "truncationExcludedCharacters" : "0123456789",
+            "polygonAnchorPointPerimeterInsetUnit" : "Point"
+          },
+          "name" : "Class 1",
+          "priority" : -1,
+          "standardLabelPlacementProperties" : {
+            "type" : "CIMStandardLabelPlacementProperties",
+            "featureType" : "Line",
+            "featureWeight" : "None",
+            "labelWeight" : "High",
+            "numLabelsOption" : "OneLabelPerName",
+            "lineLabelPosition" : {
+              "type" : "CIMStandardLineLabelPosition",
+              "above" : true,
+              "inLine" : true,
+              "parallel" : true
+            },
+            "lineLabelPriorities" : {
+              "type" : "CIMStandardLineLabelPriorities",
+              "aboveStart" : 3,
+              "aboveAlong" : 3,
+              "aboveEnd" : 3,
+              "centerStart" : 3,
+              "centerAlong" : 3,
+              "centerEnd" : 3,
+              "belowStart" : 3,
+              "belowAlong" : 3,
+              "belowEnd" : 3
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "pointPlacementPriorities" : {
+              "type" : "CIMStandardPointPlacementPriorities",
+              "aboveLeft" : 2,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerLeft" : 3,
+              "centerRight" : 2,
+              "belowLeft" : 3,
+              "belowCenter" : 3,
+              "belowRight" : 2
+            },
+            "rotationType" : "Arithmetic",
+            "polygonPlacementMethod" : "AlwaysHorizontal"
+          },
+          "textSymbol" : {
+            "type" : "CIMSymbolReference",
+            "symbol" : {
+              "type" : "CIMTextSymbol",
+              "blockProgression" : "TTB",
+              "depth3D" : 1,
+              "extrapolateBaselines" : true,
+              "fontEffects" : "Normal",
+              "fontEncoding" : "Unicode",
+              "fontFamilyName" : "Tahoma",
+              "fontStyleName" : "Regular",
+              "fontType" : "Unspecified",
+              "haloSize" : 1,
+              "height" : 10,
+              "hinting" : "Default",
+              "horizontalAlignment" : "Left",
+              "kerning" : true,
+              "letterWidth" : 100,
+              "ligatures" : true,
+              "lineGapType" : "ExtraLeading",
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ],
+                "angleAlignment" : "Map"
+              },
+              "textCase" : "Normal",
+              "textDirection" : "LTR",
+              "verticalAlignment" : "Bottom",
+              "verticalGlyphOrientation" : "Right",
+              "wordSpacing" : 100,
+              "billboardMode3D" : "FaceNearPlane"
+            }
+          },
+          "useCodedValue" : true,
+          "visibility" : true,
+          "iD" : -1
+        }
+      ],
+      "renderer" : {
+        "type" : "CIMSimpleRenderer",
+        "sampleSize" : 10000,
+        "patch" : "Default",
+        "symbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPointSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMVectorMarker",
+                "enable" : true,
+                "anchorPointUnits" : "Relative",
+                "dominantSizeAxis3D" : "Z",
+                "size" : 21.283783783783782,
+                "billboardMode3D" : "FaceNearPlane",
+                "frame" : {
+                  "xmin" : 0,
+                  "ymin" : 0,
+                  "xmax" : 210,
+                  "ymax" : 210
+                },
+                "markerGraphics" : [
+                  {
+                    "type" : "CIMMarkerGraphic",
+                    "geometry" : {
+                      "rings" : [
+                        [
+                          [
+                            84.7999999999999972,
+                            50
+                          ],
+                          [
+                            30,
+                            50
+                          ],
+                          [
+                            30,
+                            63.6000000000000014
+                          ],
+                          [
+                            30.6999999999999993,
+                            71.7000000000000028
+                          ],
+                          [
+                            32.7999999999999972,
+                            79.5
+                          ],
+                          [
+                            36.2000000000000028,
+                            86.7999999999999972
+                          ],
+                          [
+                            40.8999999999999986,
+                            93.4000000000000057
+                          ],
+                          [
+                            46.6000000000000014,
+                            99.0999999999999943
+                          ],
+                          [
+                            53.2000000000000028,
+                            103.8
+                          ],
+                          [
+                            60.5,
+                            107.2
+                          ],
+                          [
+                            68.2999999999999972,
+                            109.3
+                          ],
+                          [
+                            76.4000000000000057,
+                            110
+                          ],
+                          [
+                            101.099999999999994,
+                            110
+                          ],
+                          [
+                            94.0999999999999943,
+                            86.5
+                          ],
+                          [
+                            93.5999999999999943,
+                            83.7999999999999972
+                          ],
+                          [
+                            91.5999999999999943,
+                            59
+                          ],
+                          [
+                            84.7999999999999972,
+                            50
+                          ]
+                        ],
+                        [
+                          [
+                            101.8,
+                            4.7999999999999998
+                          ],
+                          [
+                            101.400000000000006,
+                            4.9000000000000004
+                          ],
+                          [
+                            74.9000000000000057,
+                            9.5999999999999996
+                          ],
+                          [
+                            74.7000000000000028,
+                            9.6999999999999993
+                          ],
+                          [
+                            74.2999999999999972,
+                            9.8000000000000007
+                          ],
+                          [
+                            73.9000000000000057,
+                            10
+                          ],
+                          [
+                            73.5999999999999943,
+                            10.3000000000000007
+                          ],
+                          [
+                            73.4000000000000057,
+                            10.6
+                          ],
+                          [
+                            73.0999999999999943,
+                            10.9
+                          ],
+                          [
+                            73,
+                            11.3000000000000007
+                          ],
+                          [
+                            72.9000000000000057,
+                            11.6999999999999993
+                          ],
+                          [
+                            72.9000000000000057,
+                            12.1
+                          ],
+                          [
+                            72.9000000000000057,
+                            12.5
+                          ],
+                          [
+                            73,
+                            12.9
+                          ],
+                          [
+                            73.2000000000000028,
+                            13.3000000000000007
+                          ],
+                          [
+                            73.4000000000000057,
+                            13.6
+                          ],
+                          [
+                            104.3,
+                            54.1000000000000014
+                          ],
+                          [
+                            106.5,
+                            82.7999999999999972
+                          ],
+                          [
+                            114.7,
+                            110.2
+                          ],
+                          [
+                            114.900000000000006,
+                            110.5
+                          ],
+                          [
+                            115.099999999999994,
+                            110.900000000000006
+                          ],
+                          [
+                            115.3,
+                            111.2
+                          ],
+                          [
+                            115.599999999999994,
+                            111.400000000000006
+                          ],
+                          [
+                            116,
+                            111.599999999999994
+                          ],
+                          [
+                            116.3,
+                            111.8
+                          ],
+                          [
+                            116.7,
+                            111.900000000000006
+                          ],
+                          [
+                            117.099999999999994,
+                            111.900000000000006
+                          ],
+                          [
+                            117.599999999999994,
+                            111.900000000000006
+                          ],
+                          [
+                            119.5,
+                            111.5
+                          ],
+                          [
+                            119.900000000000006,
+                            111.400000000000006
+                          ],
+                          [
+                            120.2,
+                            111.3
+                          ],
+                          [
+                            120.599999999999994,
+                            111.099999999999994
+                          ],
+                          [
+                            120.900000000000006,
+                            110.8
+                          ],
+                          [
+                            121.099999999999994,
+                            110.5
+                          ],
+                          [
+                            121.3,
+                            110.099999999999994
+                          ],
+                          [
+                            121.400000000000006,
+                            109.7
+                          ],
+                          [
+                            121.5,
+                            109.3
+                          ],
+                          [
+                            121.5,
+                            108.900000000000006
+                          ],
+                          [
+                            120.400000000000006,
+                            90
+                          ],
+                          [
+                            124.400000000000006,
+                            86.2999999999999972
+                          ],
+                          [
+                            151,
+                            119.2
+                          ],
+                          [
+                            151.199999999999989,
+                            119.5
+                          ],
+                          [
+                            151.599999999999994,
+                            119.7
+                          ],
+                          [
+                            151.900000000000006,
+                            119.900000000000006
+                          ],
+                          [
+                            152.300000000000011,
+                            120
+                          ],
+                          [
+                            152.800000000000011,
+                            120.099999999999994
+                          ],
+                          [
+                            153.199999999999989,
+                            120.099999999999994
+                          ],
+                          [
+                            153.599999999999994,
+                            120
+                          ],
+                          [
+                            154,
+                            119.900000000000006
+                          ],
+                          [
+                            154.300000000000011,
+                            119.7
+                          ],
+                          [
+                            156.099999999999994,
+                            118.5
+                          ],
+                          [
+                            156.400000000000006,
+                            118.2
+                          ],
+                          [
+                            156.699999999999989,
+                            117.900000000000006
+                          ],
+                          [
+                            156.900000000000006,
+                            117.599999999999994
+                          ],
+                          [
+                            157,
+                            117.2
+                          ],
+                          [
+                            157.099999999999994,
+                            116.8
+                          ],
+                          [
+                            157.199999999999989,
+                            116.3
+                          ],
+                          [
+                            157.099999999999994,
+                            115.900000000000006
+                          ],
+                          [
+                            157,
+                            115.5
+                          ],
+                          [
+                            156.800000000000011,
+                            115.2
+                          ],
+                          [
+                            135.300000000000011,
+                            78
+                          ],
+                          [
+                            170.900000000000006,
+                            109.599999999999994
+                          ],
+                          [
+                            171.199999999999989,
+                            109.8
+                          ],
+                          [
+                            171.5,
+                            110
+                          ],
+                          [
+                            171.900000000000006,
+                            110.099999999999994
+                          ],
+                          [
+                            172.300000000000011,
+                            110.2
+                          ],
+                          [
+                            172.699999999999989,
+                            110.2
+                          ],
+                          [
+                            173.099999999999994,
+                            110.2
+                          ],
+                          [
+                            173.400000000000006,
+                            110
+                          ],
+                          [
+                            173.800000000000011,
+                            109.900000000000006
+                          ],
+                          [
+                            174.099999999999994,
+                            109.7
+                          ],
+                          [
+                            175.300000000000011,
+                            108.7
+                          ],
+                          [
+                            175.599999999999994,
+                            108.400000000000006
+                          ],
+                          [
+                            175.800000000000011,
+                            108.099999999999994
+                          ],
+                          [
+                            176,
+                            107.7
+                          ],
+                          [
+                            176.099999999999994,
+                            107.2
+                          ],
+                          [
+                            176.199999999999989,
+                            106.8
+                          ],
+                          [
+                            176.199999999999989,
+                            106.400000000000006
+                          ],
+                          [
+                            176.099999999999994,
+                            106
+                          ],
+                          [
+                            175.900000000000006,
+                            105.599999999999994
+                          ],
+                          [
+                            175.599999999999994,
+                            105.2
+                          ],
+                          [
+                            146.300000000000011,
+                            69.2000000000000028
+                          ],
+                          [
+                            183.800000000000011,
+                            93.7999999999999972
+                          ],
+                          [
+                            184.099999999999994,
+                            94
+                          ],
+                          [
+                            184.5,
+                            94.0999999999999943
+                          ],
+                          [
+                            184.900000000000006,
+                            94.2000000000000028
+                          ],
+                          [
+                            185.300000000000011,
+                            94.2000000000000028
+                          ],
+                          [
+                            185.800000000000011,
+                            94.2000000000000028
+                          ],
+                          [
+                            186.199999999999989,
+                            94
+                          ],
+                          [
+                            186.5,
+                            93.9000000000000057
+                          ],
+                          [
+                            186.900000000000006,
+                            93.5999999999999943
+                          ],
+                          [
+                            187.099999999999994,
+                            93.2999999999999972
+                          ],
+                          [
+                            188.300000000000011,
+                            91.9000000000000057
+                          ],
+                          [
+                            188.5,
+                            91.5999999999999943
+                          ],
+                          [
+                            188.699999999999989,
+                            91.2000000000000028
+                          ],
+                          [
+                            188.800000000000011,
+                            90.7999999999999972
+                          ],
+                          [
+                            188.800000000000011,
+                            90.4000000000000057
+                          ],
+                          [
+                            188.800000000000011,
+                            89.9000000000000057
+                          ],
+                          [
+                            188.699999999999989,
+                            89.5
+                          ],
+                          [
+                            188.5,
+                            89.0999999999999943
+                          ],
+                          [
+                            188.300000000000011,
+                            88.7999999999999972
+                          ],
+                          [
+                            188,
+                            88.5
+                          ],
+                          [
+                            157.300000000000011,
+                            60.2999999999999972
+                          ],
+                          [
+                            158,
+                            59.5
+                          ],
+                          [
+                            185.400000000000006,
+                            70.7999999999999972
+                          ],
+                          [
+                            185.800000000000011,
+                            70.9000000000000057
+                          ],
+                          [
+                            186.199999999999989,
+                            71
+                          ],
+                          [
+                            186.599999999999994,
+                            70.9000000000000057
+                          ],
+                          [
+                            187,
+                            70.9000000000000057
+                          ],
+                          [
+                            187.400000000000006,
+                            70.7000000000000028
+                          ],
+                          [
+                            187.699999999999989,
+                            70.5
+                          ],
+                          [
+                            188,
+                            70.2999999999999972
+                          ],
+                          [
+                            188.300000000000011,
+                            70
+                          ],
+                          [
+                            188.5,
+                            69.7000000000000028
+                          ],
+                          [
+                            188.699999999999989,
+                            69.2999999999999972
+                          ],
+                          [
+                            188.800000000000011,
+                            68.9000000000000057
+                          ],
+                          [
+                            188.800000000000011,
+                            68.5
+                          ],
+                          [
+                            188.800000000000011,
+                            68.0999999999999943
+                          ],
+                          [
+                            188.699999999999989,
+                            67.7000000000000028
+                          ],
+                          [
+                            188.599999999999994,
+                            67.2999999999999972
+                          ],
+                          [
+                            188.400000000000006,
+                            67
+                          ],
+                          [
+                            188.099999999999994,
+                            66.7000000000000028
+                          ],
+                          [
+                            187.800000000000011,
+                            66.4000000000000057
+                          ],
+                          [
+                            149.400000000000006,
+                            39.3999999999999986
+                          ],
+                          [
+                            121.2,
+                            26.6999999999999993
+                          ],
+                          [
+                            103.7,
+                            5.7000000000000002
+                          ],
+                          [
+                            103.5,
+                            5.5
+                          ],
+                          [
+                            103.2,
+                            5.2000000000000002
+                          ],
+                          [
+                            102.900000000000006,
+                            5.0999999999999996
+                          ],
+                          [
+                            102.5,
+                            4.9000000000000004
+                          ],
+                          [
+                            102.2,
+                            4.7999999999999998
+                          ],
+                          [
+                            101.8,
+                            4.7999999999999998
+                          ]
+                        ],
+                        [
+                          [
+                            85,
+                            121
+                          ],
+                          [
+                            79.7000000000000028,
+                            121.400000000000006
+                          ],
+                          [
+                            74.5,
+                            122.7
+                          ],
+                          [
+                            69.5999999999999943,
+                            124.7
+                          ],
+                          [
+                            65,
+                            127.5
+                          ],
+                          [
+                            61,
+                            131
+                          ],
+                          [
+                            57.5,
+                            135
+                          ],
+                          [
+                            54.7000000000000028,
+                            139.599999999999994
+                          ],
+                          [
+                            52.7000000000000028,
+                            144.5
+                          ],
+                          [
+                            51.3999999999999986,
+                            149.699999999999989
+                          ],
+                          [
+                            51,
+                            155
+                          ],
+                          [
+                            51.5,
+                            161
+                          ],
+                          [
+                            53.1000000000000014,
+                            166.699999999999989
+                          ],
+                          [
+                            55.6000000000000014,
+                            172.099999999999994
+                          ],
+                          [
+                            59,
+                            176.900000000000006
+                          ],
+                          [
+                            63.2000000000000028,
+                            181.099999999999994
+                          ],
+                          [
+                            68,
+                            184.5
+                          ],
+                          [
+                            73.4000000000000057,
+                            187
+                          ],
+                          [
+                            79.0999999999999943,
+                            188.5
+                          ],
+                          [
+                            85,
+                            189
+                          ],
+                          [
+                            90.9000000000000057,
+                            188.5
+                          ],
+                          [
+                            96.5999999999999943,
+                            186.900000000000006
+                          ],
+                          [
+                            102,
+                            184.400000000000006
+                          ],
+                          [
+                            106.900000000000006,
+                            181
+                          ],
+                          [
+                            111,
+                            176.900000000000006
+                          ],
+                          [
+                            114.400000000000006,
+                            172
+                          ],
+                          [
+                            116.900000000000006,
+                            166.599999999999994
+                          ],
+                          [
+                            118.5,
+                            160.900000000000006
+                          ],
+                          [
+                            119,
+                            155
+                          ],
+                          [
+                            118.5,
+                            149.099999999999994
+                          ],
+                          [
+                            116.900000000000006,
+                            143.400000000000006
+                          ],
+                          [
+                            114.400000000000006,
+                            138
+                          ],
+                          [
+                            111,
+                            133.099999999999994
+                          ],
+                          [
+                            106.900000000000006,
+                            129
+                          ],
+                          [
+                            102,
+                            125.599999999999994
+                          ],
+                          [
+                            96.5999999999999943,
+                            123.099999999999994
+                          ],
+                          [
+                            90.9000000000000057,
+                            121.5
+                          ],
+                          [
+                            85,
+                            121
+                          ]
+                        ]
+                      ]
+                    },
+                    "symbol" : {
+                      "type" : "CIMPolygonSymbol",
+                      "symbolLayers" : [
+                        {
+                          "type" : "CIMSolidFill",
+                          "enable" : true,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              0,
+                              0,
+                              0,
+                              100
+                            ]
+                          }
+                        }
+                      ],
+                      "angleAlignment" : "Map"
+                    }
+                  }
+                ],
+                "scaleSymbolsProportionally" : true,
+                "respectFrame" : true,
+                "clippingPath" : {
+                  "type" : "CIMClippingPath",
+                  "clippingType" : "Intersect",
+                  "path" : {
+                    "rings" : [
+                      [
+                        [
+                          0,
+                          0
+                        ],
+                        [
+                          210,
+                          0
+                        ],
+                        [
+                          210,
+                          210
+                        ],
+                        [
+                          0,
+                          210
+                        ],
+                        [
+                          0,
+                          0
+                        ]
+                      ]
+                    ]
+                  }
+                }
+              },
+              {
+                "type" : "CIMVectorMarker",
+                "enable" : true,
+                "colorLocked" : true,
+                "anchorPointUnits" : "Relative",
+                "dominantSizeAxis3D" : "Y",
+                "size" : 25,
+                "billboardMode3D" : "FaceNearPlane",
+                "frame" : {
+                  "xmin" : -5,
+                  "ymin" : -5,
+                  "xmax" : 5,
+                  "ymax" : 5
+                },
+                "markerGraphics" : [
+                  {
+                    "type" : "CIMMarkerGraphic",
+                    "geometry" : {
+                      "curveRings" : [
+                        [
+                          [
+                            0,
+                            5
+                          ],
+                          {
+                            "a" : [
+                              [
+                                0,
+                                5
+                              ],
+                              [
+                                1.2728230697746809e-15,
+                                0
+                              ],
+                              0,
+                              1
+                            ]
+                          }
+                        ]
+                      ]
+                    },
+                    "symbol" : {
+                      "type" : "CIMPolygonSymbol",
+                      "symbolLayers" : [
+                        {
+                          "type" : "CIMSolidStroke",
+                          "enable" : true,
+                          "capStyle" : "Round",
+                          "joinStyle" : "Round",
+                          "lineStyle3D" : "Strip",
+                          "miterLimit" : 10,
+                          "width" : 0.5,
+                          "height3D" : 1,
+                          "anchor3D" : "Center",
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              167,
+                              169,
+                              172,
+                              100
+                            ]
+                          }
+                        },
+                        {
+                          "type" : "CIMSolidFill",
+                          "enable" : true,
+                          "color" : {
+                            "type" : "CIMRGBColor",
+                            "values" : [
+                              255,
+                              255,
+                              255,
+                              100
+                            ]
+                          }
+                        }
+                      ],
+                      "angleAlignment" : "Map"
+                    }
+                  }
+                ],
+                "scaleSymbolsProportionally" : true,
+                "respectFrame" : true
+              }
+            ],
+            "haloSize" : 1,
+            "scaleX" : 1,
+            "angleAlignment" : "Display"
+          }
+        }
+      },
+      "scaleSymbols" : true,
+      "snappable" : true
+    }
+  ],
+  "rGBColorProfile" : "sRGB IEC61966-2.1",
+  "cMYKColorProfile" : "U.S. Web Coated (SWOP) v2"
+}
