@@ -836,7 +836,7 @@ if st.button("Generate Map"):
                             naStyle = p.listStyleItems('ArcGIS 2D', 'North_Arrow', 'ArcGIS North 2')[0]
                             na = lyt.createMapSurroundElement(arcpy.Point(north_arrow_x, north_arrow_y), 'North_Arrow', mf, naStyle, "ArcGIS North Arrow")
                             na.elementWidth = 0.3
-                            
+  """                          
                             #textbox
                             text_box_string = "Esri, NASA, NGA, USGS, Esri, © OpenStreetMap contributors, TomTom, Garmin, Foursquare, METI/NASA, USGS, Esri, © OpenStreetMap contributors, TomTom, Garmin, Foursquare, FAO, METI/NASA, USGS, Esri, USGS, Esri, © OpenStreetMap contributors, TomTom, Garmin, FAO, NOAA, USGS"
                             text_box_x = 0.2
@@ -851,7 +851,7 @@ if st.button("Generate Map"):
                             )
                             tbox.setAnchor('BOTTOM_LEFT_CORNER')
                             tbox.textSize = 14  # bigger font
-                            
+     """                      
                             # Title
                             txtStyleItem = p.listStyleItems('ArcGIS 2D', 'TEXT', 'Title (Serif)')[0]
                             ptTxt = p.createTextElement(
@@ -1110,7 +1110,7 @@ if st.button("Generate Map"):
                             ptTxt.elementPositionY = 10  # Adjusted to be above the larger map frame
                             ptTxt.textSize = 26  # Adjust as necessary for visibility
 
-
+"""
                             text_box_string = "Esri, NASA, NGA, USGS, Esri, © OpenStreetMap contributors, TomTom, Garmin, Foursquare, METI/NASA, USGS, Esri, © OpenStreetMap contributors, TomTom, Garmin, Foursquare, FAO, METI/NASA, USGS, Esri, USGS, Esri, © OpenStreetMap contributors, TomTom, Garmin, FAO, NOAA, USGS"
                             text_box_x = 0.2
                             text_box_y = 0.15
@@ -1124,7 +1124,7 @@ if st.button("Generate Map"):
                             )
                             tbox.setAnchor('BOTTOM_LEFT_CORNER')
                             tbox.textSize = 10  # bigger font
-
+"""
                             # Export to PNG
                             output_png = new_project_dir + "/" + png_keyphrase + ".png"
                             #output_png = os.path.join(new_project_dir, f"{png_keyphrase}.png")
