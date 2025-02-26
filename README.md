@@ -4,7 +4,7 @@
   📄 <a href="XXX" target="_blank">Paper</a> &nbsp;  &nbsp;
 </p>
 
-<p align="center"> <img src="./images/AutomappingWorkflow.png" style="width: 60%;" id="title-icon"> </p>
+<p align="center"> <img src="./images/AutomappingWorkflow.png" style="width: 70%;" id="title-icon"> </p>
 
 ## Updates
 
@@ -84,18 +84,31 @@ When a user inputs a news article or textual report:
 7. Create a new project named `BlankTemplate`, save it, and close ArcGIS Pro. This template allows ArcPy to reference a default project for further map creation.
 
 ### **2️⃣ Conda Environment and Repository Setup**
-1. Open **Anaconda Navigator**.
-2. Select the `AutomappingEnv` environment.
-3. Launch **VSCode** from Anaconda Navigator.
-4. Clone the repository:
+
+1. Open **Anaconda Navigator**.  
+2. Select the `AutomappingEnv` environment.  
+3. Launch **VSCode** from Anaconda Navigator.  
+4. Clone the repository:  
    ```bash
    git clone https://github.com/yahya3867/Automating-Map-Making-through-Enhanced-Geographic-Information-Extraction-Using-RAG-with-LLMs.git
    cd Automating-Map-Making-through-Enhanced-Geographic-Information-Extraction-Using-RAG-with-LLMs
    ```
-5. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+
+5. Install dependencies using one of the following options:
+
+##### **Option A: Using `environment.yml`**  
+```bash
+conda activate AutomappingEnv
+conda env update --file environment.yml --prune
+```
+
+
+##### **Option B: Using `requirements.txt`**  
+Ensure the `AutomappingEnv` Conda environment is activated before running the following command:  
+```bash
+pip install -r requirements.txt
+```
+
 
 ### **3️⃣ Configure LM Studio and Select Models**
 1. **Download and install** [LM Studio](https://lmstudio.ai).
