@@ -79,7 +79,7 @@ if st.button("Generate Map"):
             try:
                 new_project_dir = "Documents/ArcGIS/Projects/UseCase1" # insert the path to your desired new project directory
                 new_aprx_path = "Documents/ArcGIS/Projects/UseCase1/UseCase1.aprx" # insert the path to your desired new project .aprx file
-                layer_path = "Automapping_files/sdn_adm_cbs_nic_ssa_20200831_shp/sdn_admbnda_adm1_cbs_nic_ssa_20200831.shp" 
+                layer_path = "automap_files/sdn_adm_cbs_nic_ssa_20200831_shp/sdn_admbnda_adm1_cbs_nic_ssa_20200831.shp" 
                 template_project_path = "Documents/ArcGIS/Projects/BlankTemplate" # insert the path to the preexisting blank template project .aprx file
                 os.makedirs(os.path.dirname(new_aprx_path), exist_ok=True)
 
@@ -357,23 +357,23 @@ if st.button("Generate Map"):
                 png_keyphrase = re.sub(r'[^a-zA-Z0-9_]', '_', png_keyphrase)
 
                 # Define symbology layer paths
-                damage_or_destruction_looting_or_theft_of_cultural_heritage_symbology_layer = "automapping_files/damage_or_destruction_looting_or_theft_of_cultural_heritage.lyrx"
-                damage_or_destruction_of_civilian_critical_infrastructure_symbology_layer = "automapping_files/damage_or_destruction_of_civilian_critical_infrastructure.lyrx"
-                enslavement_symbology_layer = "automapping_files/enslavement.lyrx"
-                extrajudicial_killing_symbology_layer = "automapping_files/extrajudicial_killing.lyrx"
-                forced_disappearance_symbology_layer = "automapping_files/forced_disappearance.lyrx"
-                gender_based_violence_symbology_layer = "automapping_files/gender_based_violence.lyrx"
-                human_trafficking_symbology_layer = "automapping_files/human_trafficking.lyrx"
-                indiscriminate_use_of_weapons_symbology_layer = "automapping_files/indiscriminate_use_of_weapons.lyrx"
-                kidnapping_symbology_layer = "automapping_files/kidnapping.lyrx"
-                mass_excecution_symbology_layer = "automapping_files/mass_excecution.lyrx"
-                military_operations_symbology_layer = "automapping_files/military_operations.lyrx"
-                movement_of_military_symbology_layer = "automapping_files/movement_of_military.lyrx"
-                persecution_symbology_layer = "automapping_files/persecution.lyrx"
-                torture_symbology_layer = "automapping_files/torture.lyrx"
-                unlawful_detention_symbology_layer = "automapping_files/unlawful_detention.lyrx"
-                violent_crackdowns_on_protesters_symbology_layer = "automapping_files/violent_crackdowns_on_protesters.lyrx"
-                willful_killing_of_civilians_symbology_layer = "automapping_files/willful_killing_of_civilians.lyrx"
+                damage_or_destruction_looting_or_theft_of_cultural_heritage_symbology_layer = "automap_files/damage_or_destruction_looting_or_theft_of_cultural_heritage.lyrx"
+                damage_or_destruction_of_civilian_critical_infrastructure_symbology_layer = "automap_files/damage_or_destruction_of_civilian_critical_infrastructure.lyrx"
+                enslavement_symbology_layer = "automap_files/enslavement.lyrx"
+                extrajudicial_killing_symbology_layer = "automap_files/extrajudicial_killing.lyrx"
+                forced_disappearance_symbology_layer = "automap_files/forced_disappearance.lyrx"
+                gender_based_violence_symbology_layer = "automap_files/gender_based_violence.lyrx"
+                human_trafficking_symbology_layer = "automap_files/human_trafficking.lyrx"
+                indiscriminate_use_of_weapons_symbology_layer = "automap_files/indiscriminate_use_of_weapons.lyrx"
+                kidnapping_symbology_layer = "automap_files/kidnapping.lyrx"
+                mass_excecution_symbology_layer = "automap_files/mass_excecution.lyrx"
+                military_operations_symbology_layer = "automap_files/military_operations.lyrx"
+                movement_of_military_symbology_layer = "automap_files/movement_of_military.lyrx"
+                persecution_symbology_layer = "automap_files/persecution.lyrx"
+                torture_symbology_layer = "automap_files/torture.lyrx"
+                unlawful_detention_symbology_layer = "automap_files/unlawful_detention.lyrx"
+                violent_crackdowns_on_protesters_symbology_layer = "automap_files/violent_crackdowns_on_protesters.lyrx"
+                willful_killing_of_civilians_symbology_layer = "automap_files/willful_killing_of_civilians.lyrx"
                 
                 # Create feature class for incidents
                 st.write("Adding incidents to geodatabase...")
