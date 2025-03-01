@@ -4,7 +4,7 @@
   📄 <a href="XXX" target="_blank">Paper</a> &nbsp;  &nbsp;
 </p>
 
-<p align="center"> <img src="./images/AutomappingWorkflow.png" style="width: 70%;" id="title-icon"> </p>
+<p align="center"> <img src=".static/images/AutomappingWorkflow.png" style="width: 70%;" id="title-icon"> </p>
 
 ## Updates
 
