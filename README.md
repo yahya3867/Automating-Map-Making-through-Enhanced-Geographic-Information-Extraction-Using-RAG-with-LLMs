@@ -14,7 +14,7 @@
 - [Mapping Workflow](#mapping-workflow) 🗺️
 - [Model Zoo](#model-zoo) 🏛️
 - [Quick Start](#quick-start) 🚀
-- [Demo](#demo) 🎬
+- [Demo Video](#demo-video) 🎬
 - [License](#license) 📜
 - [Citation](#citation) 🔖
 
