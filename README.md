@@ -138,7 +138,7 @@ This will launch the **Streamlit UI** in your browser. You can insert articles d
 
 <p align="center">
   <video width="70%" controls oncontextmenu="return false;">
-    <source src="static/videos/demo.mp4" type="video/mp4">
+    <source src="static/videos/Automap.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
