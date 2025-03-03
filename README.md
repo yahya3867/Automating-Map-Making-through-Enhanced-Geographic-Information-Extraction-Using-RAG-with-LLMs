@@ -134,15 +134,7 @@ streamlit run Automap.py
 This will launch the **Streamlit UI** in your browser. You can insert articles directly, and the generated maps will be downloadable to your `Downloads` directory. Alternatively, access the ArcGIS Pro project for further modifications.
 
 ## Demo Video
-🎥 **Watch the Demo Below**:
-
-<p align="center">
-  <video width="70%" controls oncontextmenu="return false;">
-    <source src="static/videos/Automap.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
+https://github.com/user-attachments/assets/434e07a4-1fb0-4844-88e3-a847977d05c2
 
 ## License
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
