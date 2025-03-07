@@ -37,7 +37,7 @@ The framework transforms extracted information into spatiotemporal visualization
 | **Case 1** (English Article) | 1m 7s |
 | **Case 2** (English Article) | 1m 5s | 
 | **Case 3** (Arabic Article)  | 59s |
-| **Case 4** (Synthetic Article) | 1m 59s | 
+| **Case 4** (Synthetic Article) | 1m 9s | 
 
 ## Mapping Workflow
 
